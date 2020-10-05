@@ -136,7 +136,7 @@ const App = () => {
 
   const deletePerson = id => {
     const person = persons.find(n => n.id === id)
-    if (window.confirm(`Delete ${person.name}`)) {
+    if (window.confirm(`Delete ${person.name}?`)) {
       phoneService
         .remove(id)
         .then(response => {
